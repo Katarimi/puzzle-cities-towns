@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Puzzle</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Have you ever been in...?</h1>
+    
+    <div class="center">
+    <table>
+        <caption>
+    Table of great tourists        </caption>
+        <thead>
+          <tr>
+            <th scope="col">City</th>
+            <th scope="col">Info</th>
+            <th scope="col">Answear</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Bratislava</th>
+            <td><a href="https://bratislava.sk/" target="_blank">O Bratislave</a></td>
+            <td> <input type="checkbox" id="check1"/>
+                <label>Yes</label><br>
+               </td>
+          </tr>
+          <tr>
+            <th scope="row">Košice</th>
+            <td><a href="https://www.kosice.sk/sk" target="_blank">O Košiciach</a></td>
+            <td><input type="checkbox" id="check2"  />
+            <label for="scales">Yes</label></td> 
+          </tr>
+          <tr>
+            <th scope="row">Banská Bystrica</th>
+            <td><a href="https://sk.wikipedia.org/wiki/Bansk%C3%A1_Bystrica" target="_blank">O Banskej Bystrici</a></td>
+            <td><input type="checkbox" id="check3"  />
+            <label for="scales">Yes</label></td> 
+          </tr>
+          <tr>
+            <th scope="row">Žilina</th>
+            <td><a href="https://sk.wikipedia.org/wiki/%C5%BDilina" target="_blank">O Žiline</a></td>
+            <td><input type="checkbox" id="check4"  />
+            <label for="scales">Yes</label></td> 
+          </tr>
+         
+        </tbody>
+        <tfoot>
+          <tr>
+            <th scope="row" colspan="2">Total Number of visited cities:</th>          
+            <td id="result">33</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+    <hr>
+    <h2>Your collection</h2>
+    <div class="center">
+      <div class="grid-container">
+        <div class="grid-item" id="item1"><img id="img1" src="BA.jpg" style="display:none" alt="Obrázok"></div>
+        <div class="grid-item" id="item2"><img id="img2" src="KE.jpg" style="display:none" alt="Obrázok"></div>
+        <div class="grid-item" id="item3"><img id="img3" src="BB.jpg" style="display:none" alt="Obrázok"></div>
+        <div class="grid-item" id="item4"><img id="img4" src="ZA.jpg" style="display:none" alt="Obrázok"></div>
+    </div>
+  </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="./puzzle.js" charset="utf-8"></script>
+
+</body>
+</html>
